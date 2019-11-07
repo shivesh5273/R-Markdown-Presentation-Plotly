@@ -1,0 +1,27 @@
+##Shivesh Raj Sahu
+
+##7 November 2019
+
+##Developing Data Products
+##R Markdown Presentation & Plotly
+##Peer-graded Assignment.
+##library(plotly)
+## Warning: package 'plotly' was built under R version 3.5.2
+## Loading required package: ggplot2
+## Warning: package 'ggplot2' was built under R version 3.5.2
+## 
+## Attaching package: 'plotly'
+## The following object is masked from 'package:ggplot2':
+## 
+##     last_plot
+## The following object is masked from 'package:stats':
+## 
+##     filter
+## The following object is masked from 'package:graphics':
+## 
+##     layout
+data(iris)
+
+plot_ly(x= iris$Sepal.Width, y= iris$Sepal.Length, z = iris$Species, 
+type = "scatter3d", mode = "markers", color = iris$Species)
+## Warning: package 'bindrcpp' was built under R version 3.5.2
